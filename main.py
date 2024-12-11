@@ -7,6 +7,8 @@ from handlers.other_message import echo_router
 from handlers.picture import picture_router
 from handlers.start import start_router
 from dotenv import load_dotenv
+from handlers.dialog import dialog_router
+
 
 load_dotenv()
 
@@ -22,6 +24,7 @@ dp.include_router(handlers.info.info_router)
 dp.include_router(menu_router)
 dp.include_router(echo_router)
 dp.include_router(picture_router)
+dp.include_router(dialog_router)
 
 
 
